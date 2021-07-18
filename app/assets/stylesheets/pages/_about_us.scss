@@ -1,0 +1,188 @@
+
+.container {
+ margin: 0 auto;
+ width: 100%;
+ background-image: image-url("background-about-us.jpg");
+ background-position: center;
+ background-size: cover;
+ height: 120vh;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --spinning-timer: 0.1s;
+}
+
+.about-us-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 12% 12% 12% 12% 12%;
+}
+
+.about-us-grid-item {
+  background-color: black;
+  border: 0.5px solid white;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.about-us-name-container {
+  display:flex;
+  flex-direction: column;
+  letter-spacing: 0.5em;
+  color: white;
+}
+
+
+.about-us-name-1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+
+.about-us-name-2 {
+  opacity: 0;
+}
+
+.about-us-name-3 {
+  opacity: 0;
+}
+
+.about-us-name-4 {
+  opacity: 0;
+}
+
+.about-us-name-5 {
+  opacity: 0;
+}
+
+.about-us-name-6 {
+  opacity: 0;
+}
+
+.about-us-name-7 {
+  opacity: 0;
+}
+
+.about-us-name-8 {
+  opacity: 0;
+}
+
+.about-us-name-9 {
+  opacity: 0;
+}
+
+
+
+
+@keyframes letter-spinning {
+  from {
+    transform: rotate3d(0, 1, 0, 180deg);
+    opacity: 0;
+  }
+  20% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+  40% {
+    transform: rotate3d(0, -1, 0, 180deg);
+  }
+  60% {
+    transform: rotate3d(0, -1, 0, 360deg);
+    opacity:0.5;
+  }
+  80% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 360deg);
+    opacity:1;
+  }
+}
+
+@keyframes letter-appear {
+  1% {
+    opacity:0
+  }
+  100% {
+    opacity:1
+  }
+}
+
+
+.about-us-grid-item:hover .about-us-name-2 {
+  animation: letter-spinning  var(--spinning-timer) forwards ;
+  animation-iteration-count: 3;
+}
+
+.about-us-grid-item:hover .about-us-name-3 {
+  animation: letter-spinning  var(--spinning-timer) forwards  ;
+  animation-iteration-count: 4;
+}
+
+.about-us-grid-item:hover .about-us-name-4 {
+    animation: letter-spinning  var(--spinning-timer) forwards ;
+    animation-iteration-count: 5;
+}
+
+.about-us-grid-item:hover .about-us-name-5 {
+  animation: letter-spinning  var(--spinning-timer) forwards ;
+  animation-iteration-count: 5;
+}
+
+
+.about-us-grid-item:hover .about-us-name-6 {
+  animation: letter-spinning  var(--spinning-timer) forwards ;
+  animation-iteration-count: 7;
+}
+
+
+.about-us-grid-item:hover .about-us-name-7 {
+  animation: letter-spinning  var(--spinning-timer) forwards ;
+  animation-iteration-count: 8;
+}
+
+
+.about-us-grid-item:hover .about-us-name-8 {
+  animation: letter-spinning  var(--spinning-timer) forwards ;
+  animation-iteration-count: 9;
+}
+
+.about-us-grid-item:hover .about-us-name-9 {
+  animation: letter-spinning  var(--spinning-timer) forwards ;
+  animation-iteration-count: 10;
+}
+
+
+.about-us-grid-item:hover .about-us-name-10 {
+  animation: letter-spinning  var(--spinning-timer) forwards ;
+  animation-iteration-count: 11;
+}
+
+ 
+.about-us-grid-item:hover .about-us-name-11 {
+  animation: letter-spinning  var(--spinning-timer) forwards ;
+  animation-iteration-count: 12;
+}
+
+ 
+.about-us-image {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-us-expand {
+  color: white;
+  position: absolute;
+  bottom: 5%;
+}
+
+.placeholder {
+  height: 100px;
+}
